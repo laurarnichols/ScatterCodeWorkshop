@@ -1,0 +1,22 @@
+&inputParams
+
+ order = 0
+
+ iSpin = 1 ! Spin channel of interest
+ 
+ newEnergyTable   = .true.
+ energyTableDir   = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/EnergyTabulator/nonequilibrium/'
+ PhononPPDir      = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/PhononPP/' 
+ njInput          = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/PhononPP/njDir/njThermal.out.300'
+ diffOmega = .true.
+ rereadDq = .true.
+
+ matrixElementDir = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/TME/nonequilibrium' 
+
+ outputDir = './'
+
+ dt                   = 2e-4   ! time step to use (hbar/Hartree) 
+ hbarGamma            = 3.7    ! (meV)
+ smearingExpTolerance = 1d-5    ! tolerance for e^{\gamma t} to determine max time
+
+/

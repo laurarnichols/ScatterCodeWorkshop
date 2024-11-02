@@ -1,0 +1,25 @@
+&inputParams
+  temperature = 300    ! (K)
+
+  calcMaxDisp = .false.
+  singleDisp = .true.             ! If there's a single displacement to consider, default .true.
+  generateShiftedPOSCARs = .true.
+  dqEigvecsFinal = .true. 
+  shift = 0.1 ! A
+
+  ! Required to read phonons:
+  diffOmega = .true.
+  phononFName      = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/Phonons/mesh_charged_initial.yaml'   
+  phononPrimeFName = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/Phonons/mesh_ground_final.yaml'   
+  freqThresh = 0.5            ! Threshold for keeping frequencies, default 0.5 (same units as Phononpy)
+
+  ! Calculating Sj
+  calcSj           = .true.                                   ! Default: .true.; if Sj should be calculated
+  initPOSCARFName  = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/CONTCAR_init'
+  finalPOSCARFName = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/CONTCAR_final'
+  SjThresh = 1e-2
+
+  ! Calculating dq
+  calcDq = .true.
+  basePOSCARFName  = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/CONTCAR_init'
+/

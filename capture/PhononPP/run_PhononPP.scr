@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --nodes 2
+#SBATCH --ntasks-per-node=128
+#SBATCH -C cpu
+#SBATCH -q debug
+#SBATCH -t 00:10:00
+#SBATCH -J PhononPP
+#SBATCH -o %x.o%j
+#SBATCH -e %x.e%j
+#SBATCH --mail-type=begin,end,fail
+#SBATCH --mail-user=laura.r.nichols@vanderbilt.edu
+
+srun ~/defectCrossSections/bin/PhononPP.x -nk 1 < PhononPP.in > PhononPP.out

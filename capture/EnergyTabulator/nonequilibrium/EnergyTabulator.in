@@ -1,0 +1,23 @@
+&inputParams
+ 
+ exportDirEigs       = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/VASPAndExport/pristine/exportGam/'
+ exportDirInitInit   = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/VASPAndExport/defect/initialChargeState/scf/export' 
+ exportDirFinalInit  = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/VASPAndExport/defect/finalChargeState/initialPositions/scf/2x2x2PlusGam/export' 
+ exportDirFinalFinal = '/pscratch/sd/l/lnichols/recreateGuanzhisNumbers/VASPAndExport/defect/finalChargeState/finalPositions/export' 
+
+ energyTableDir           = './'
+
+ eCorrectTot    = 0.31851   ! eV
+ eCorrectEigRef = 0.0        ! eV
+
+ captured = .true.
+ elecCarrier = .false.
+
+ iBandIinit   = 177         ! initial state initial band
+ iBandIfinal  = 189         ! initial state final band
+ iBandFinit   = 192         ! final state initial band
+ iBandFfinal  = 192         ! final state final band
+
+ refBand      = 187         ! 3rd band down
+
+/

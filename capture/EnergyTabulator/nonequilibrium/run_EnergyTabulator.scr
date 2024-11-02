@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node=128
+#SBATCH -C cpu
+#SBATCH -q debug
+#SBATCH -t 00:10:00
+#SBATCH -J EnergyTabulator
+#SBATCH -o %x.o%j
+#SBATCH -e %x.e%j
+#SBATCH --mail-type=begin,end,fail
+#SBATCH --mail-user=
+
+srun ~/defectCrossSections/bin/EnergyTabulator.x < EnergyTabulator.in > EnergyTabulator.out

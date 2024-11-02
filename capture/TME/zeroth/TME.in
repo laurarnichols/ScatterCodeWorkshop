@@ -1,0 +1,11 @@
+&TME_Input
+
+ braExportDir    = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/Export/finalChargeStateInitialPositions/'
+ ketExportDir    = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/Export/perfectCrystal/'
+ energyTableDir  = '/pscratch/sd/l/lnichols/workshopExampleGaN/capture/EnergyTabulator/nonequilibrium/'
+
+ order           = 0 ! zeroth-order
+
+ outputDir   = './'       ! path to store outputs
+/
+
